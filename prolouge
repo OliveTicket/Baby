@@ -51,3 +51,74 @@ Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
         new file:   prolouge
 
+PC@DESKTOP-1LLS3SG MINGW64 ~/Documents/Programming/Udemy/Git, Github and Version Control/Plot (master)
+$ git commit -m "Complete prolouge"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'PC@DESKTOP-1LLS3SG.(none)')
+
+PC@DESKTOP-1LLS3SG MINGW64 ~/Documents/Programming/Udemy/Git, Github and Version Control/Plot (master)
+$ git config --global user.emai "lutzfury@protonmail.com"
+
+PC@DESKTOP-1LLS3SG MINGW64 ~/Documents/Programming/Udemy/Git, Github and Version Control/Plot (master)
+$ git config --global user.name "OliveTicket"
+
+//alter plot line
+
+PC@DESKTOP-1LLS3SG MINGW64 ~/Documents/Programming/Udemy/Git, Github and Version Control/Plot (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.emai=lutzfury@protonmail.com
+user.name=OliveTicket
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+(END)
+
+// main line
+
+PC@DESKTOP-1LLS3SG MINGW64 ~/Documents/Programming/Udemy/Git, Github and Version Control/Plot (master)
+$ git config --global user.email "lutzfury@protonmail.com"
+
+PC@DESKTOP-1LLS3SG MINGW64 ~/Documents/Programming/Udemy/Git, Github and Version Control/Plot (master)
+$ git config --global user.name "OliveTicket"
+
+PC@DESKTOP-1LLS3SG MINGW64 ~/Documents/Programming/Udemy/Git, Github and Version Control/Plot (master)
+$ git commit -m "initial commit"
+[master (root-commit) e28d7b5] initial commit
+ 1 file changed, 53 insertions(+)
+ create mode 100644 prolouge
+
+ PC@DESKTOP-1LLS3SG MINGW64 ~/Documents/Programming/Udemy/Git, Github and Version Control/Plot (master)
+$ git log
+commit e28d7b55615635ba96d94dd91d3385fa4523cf36 (HEAD -> master)
+Author: OliveTicket <lutzfury@protonmail.com>
+Date:   Mon Nov 11 12:30:21 2024 +0800
+
+    initial commit
