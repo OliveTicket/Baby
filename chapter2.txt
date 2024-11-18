@@ -1,1 +1,4 @@
-I don't want to do calls anymore
+    git log
+    git branch side-quest
+    git branch <--- to see which branch
+    git checkout side-quest
